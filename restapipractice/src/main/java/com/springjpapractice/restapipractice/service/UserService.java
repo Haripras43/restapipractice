@@ -1,6 +1,7 @@
 package com.springjpapractice.restapipractice.service;
 
 import com.springjpapractice.restapipractice.entity.User;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 

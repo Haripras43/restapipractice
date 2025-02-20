@@ -3,6 +3,7 @@ package com.springjpapractice.restapipractice.service;
 import com.springjpapractice.restapipractice.entity.User;
 import com.springjpapractice.restapipractice.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.Optional;
 @AllArgsConstructor
 
 public class UserServiceImpl implements UserService{
+    @Autowired
     private UserRepository userRepository;
     @Override
     public User createUser(User user) {

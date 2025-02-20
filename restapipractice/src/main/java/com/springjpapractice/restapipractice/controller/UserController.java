@@ -18,7 +18,7 @@ public class UserController {
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
         User savedUser = userService.createUser(user);
-        return ResponseEntity.status(HttpStatus.CREATED).body(savedUser);
+        return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
     }
     //create a rest api for getUserId
     @GetMapping("{id}")
